@@ -1,12 +1,12 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <metadata>
   <groupId>smooth-nlp</groupId>
-  <artifactId>smooth-core</artifactId>
+  <artifactId>smooth-lm</artifactId>
   <versioning>
     <release>1.0.0-a</release>
     <versions>
       <version>1.0.0-a</version>
     </versions>
-    <lastUpdated>20130224234710</lastUpdated>
+    <lastUpdated>20130224234711</lastUpdated>
   </versioning>
 </metadata>
