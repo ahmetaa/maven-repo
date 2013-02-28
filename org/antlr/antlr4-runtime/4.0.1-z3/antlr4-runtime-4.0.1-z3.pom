@@ -18,17 +18,9 @@
     <distributionManagement>
         <repository>
             <id>local-repo-clone</id>
-            <url>file://${project.basedir}/../maven-repo</url>
+            <url>file:///home/kodlab/projects/maven-repo</url>
         </repository>
     </distributionManagement>
-
-    <repositories>
-        <repository>
-            <id>ahmetaa-repo</id>
-            <name>ahmetaa Maven Repo on Github</name>
-            <url>https://raw.github.com/ahmetaa/../maven-repo/master</url>
-        </repository>
-    </repositories>
 
     <dependencies>
         <dependency>
@@ -39,7 +31,7 @@
         </dependency>
     </dependencies>
 
-<!--    <profiles>
+    <profiles>
         <profile>
             <id>sonatype-oss-release</id>
             <build>
@@ -63,7 +55,7 @@
                 </plugins>
             </build>
         </profile>
-    </profiles>-->
+    </profiles>
 
     <build>
 
