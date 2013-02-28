@@ -4,9 +4,9 @@
     <modelVersion>4.0.0</modelVersion>
 
     <parent>
-        <groupId>org.antlr</groupId>
+        <groupId>antlr4-z3</groupId>
         <artifactId>antlr4-master</artifactId>
-        <version>4.0.1-z3</version>
+        <version>4.0.1</version>
         <relativePath>../..</relativePath>
     </parent>
 
