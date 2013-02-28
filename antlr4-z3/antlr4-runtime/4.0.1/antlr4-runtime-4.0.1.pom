@@ -5,7 +5,7 @@
 
     <parent>
         <groupId>antlr4-z3</groupId>
-        <artifactId>antlr4-master</artifactId>
+        <artifactId>antlr4-z3</artifactId>
         <version>4.0.1</version>
         <relativePath>../..</relativePath>
     </parent>
