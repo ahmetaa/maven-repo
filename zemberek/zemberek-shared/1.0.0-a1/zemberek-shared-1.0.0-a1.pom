@@ -1,0 +1,65 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project xmlns="http://maven.apache.org/POM/4.0.0"
+         xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+         xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xsd/maven-4.0.0.xsd">
+    <modelVersion>4.0.0</modelVersion>
+
+    <parent>
+        <groupId>zemberek</groupId>
+        <artifactId>parent</artifactId>
+        <version>1.0.0-a1</version>
+    </parent>
+
+    <artifactId>zemberek-shared</artifactId>
+    <version>1.0.0-a1</version>
+
+    <name>Zemberek Shared</name>
+    <description>Zemberek Shared</description>
+
+    <properties>
+        <project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
+    </properties>
+
+    <repositories>
+        <repository>
+            <id>google-diff-patch-match</id>
+            <name>google-diff-patch-match</name>
+            <url>http://google-diff-match-patch.googlecode.com/svn/trunk/maven/</url>
+        </repository>
+        <repository>
+            <id>Sonatype-public</id>
+            <name>SnakeYAML repository</name>
+            <url>http://oss.sonatype.org/content/groups/public/</url>
+        </repository>
+        <repository>
+            <id>ahmetaa-repo</id>
+            <name>ahmetaa Maven Repo on Github</name>
+            <url>https://raw.github.com/ahmetaa/maven-repo</url>
+        </repository>
+
+    </repositories>
+
+    <dependencies>
+        <dependency>
+            <groupId>antlr4-z3</groupId>
+            <artifactId>antlr4-runtime</artifactId>
+            <version>4.0.1z</version>
+        </dependency>
+        <dependency>
+            <groupId>log4j</groupId>
+            <artifactId>log4j</artifactId>
+            <version>1.2.16</version>
+        </dependency>
+        <dependency>
+            <artifactId>diff_match_patch</artifactId>
+            <groupId>diff_match_patch</groupId>
+            <version>current</version>
+        </dependency>
+        <dependency>
+            <groupId>org.yaml</groupId>
+            <artifactId>snakeyaml</artifactId>
+            <version>1.11</version>
+        </dependency>
+    </dependencies>
+
+</project>

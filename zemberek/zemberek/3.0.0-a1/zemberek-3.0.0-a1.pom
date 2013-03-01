@@ -1,0 +1,110 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project xmlns="http://maven.apache.org/POM/4.0.0"
+         xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+         xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xsd/maven-4.0.0.xsd">
+    <modelVersion>4.0.0</modelVersion>
+
+    <parent>
+        <groupId>zemberek</groupId>
+        <artifactId>parent</artifactId>
+        <version>1.0.0-a1</version>
+    </parent>
+
+    <artifactId>zemberek</artifactId>
+    <version>3.0.0-a1</version>
+
+    <name>Zemberek Core</name>
+    <description>Zemberek Core</description>
+
+    <repositories>
+        <repository>
+            <id>ahmetaa-repo</id>
+            <name>ahmetaa Maven Repo on Github</name>
+            <url>https://raw.github.com/ahmetaa/maven-repo/master</url>
+        </repository>
+    </repositories>
+
+    <profiles>
+        <profile>
+            <id>bigjar</id>
+            <build>
+                <plugins>
+                    <plugin>
+                        <groupId>org.apache.maven.plugins</groupId>
+                        <artifactId>maven-shade-plugin</artifactId>
+                        <version>1.7.1</version>
+                        <configuration>
+                            <shadedArtifactAttached>true</shadedArtifactAttached>
+                            <shadedClassifierName>shaded</shadedClassifierName>
+                            <createDependencyReducedPom>true</createDependencyReducedPom>
+                            <artifactSet>
+                                <includes>
+                                    <include>zemberek:shared</include>
+                                    <include>com.google.guava:guava</include>
+                                    <include>edu.berkeley.nlp:berkeleylm</include>
+                                    <include>system:smooth-lm:smoothnlp</include>
+                                </includes>
+                            </artifactSet>
+                            <relocations>
+                                <relocation>
+                                    <pattern>com.google.common</pattern>
+                                    <shadedPattern>z3.guava</shadedPattern>
+                                </relocation>
+                                <relocation>
+                                    <pattern>smoothnlp</pattern>
+                                    <shadedPattern>z3.smoothlm</shadedPattern>
+                                </relocation>
+                                <relocation>
+                                    <pattern>edu.berkeley</pattern>
+                                    <shadedPattern>z3.berkeley</shadedPattern>
+                                </relocation>
+                            </relocations>
+                        </configuration>
+                        <executions>
+                            <execution>
+                                <phase>package</phase>
+                                <goals>
+                                    <goal>shade</goal>
+                                </goals>
+                            </execution>
+                        </executions>
+                    </plugin>
+                </plugins>
+            </build>
+        </profile>
+    </profiles>
+
+    <dependencies>
+        <dependency>
+            <groupId>zemberek</groupId>
+            <artifactId>zemberek-shared</artifactId>
+            <version>1.0.0-a1</version>
+        </dependency>
+        <dependency>
+            <groupId>org.simpleframework</groupId>
+            <artifactId>simple-xml</artifactId>
+            <version>2.5.3</version>
+        </dependency>
+        <dependency>
+            <groupId>edu.berkeley.nlp</groupId>
+            <artifactId>berkeleylm</artifactId>
+            <version>1.1.2</version>
+        </dependency>
+        <dependency>
+            <groupId>smooth-nlp</groupId>
+            <artifactId>smooth-lm</artifactId>
+            <version>1.0.0-a</version>
+        </dependency>
+        <dependency>
+            <groupId>smooth-nlp</groupId>
+            <artifactId>smooth-core</artifactId>
+            <version>1.0.0-a</version>
+        </dependency>
+    </dependencies>
+
+    <properties>
+        <project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
+        <maven.test.skip>true</maven.test.skip>
+    </properties>
+
+</project>
