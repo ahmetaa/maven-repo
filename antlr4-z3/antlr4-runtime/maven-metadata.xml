@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<metadata>
+  <groupId>antlr4-z3</groupId>
+  <artifactId>antlr4-runtime</artifactId>
+  <versioning>
+    <release>4.0.1z</release>
+    <versions>
+      <version>4.0.1z</version>
+    </versions>
+    <lastUpdated>20131211151858</lastUpdated>
+  </versioning>
+</metadata>
