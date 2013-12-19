@@ -2,11 +2,10 @@
 <metadata>
   <groupId>zemberek-nlp</groupId>
   <artifactId>hyphenation</artifactId>
-  <version>1.0.0-SNAPSHOT</version>
   <versioning>
     <versions>
       <version>1.0.0-SNAPSHOT</version>
     </versions>
-    <lastUpdated>20130703062907</lastUpdated>
+    <lastUpdated>20131219211933</lastUpdated>
   </versioning>
 </metadata>
