@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<metadata modelVersion="1.1.0">
+  <groupId>zemberek-nlp</groupId>
+  <artifactId>core</artifactId>
+  <version>0.9.4-SNAPSHOT</version>
+  <versioning>
+    <snapshot>
+      <timestamp>20170117.212649</timestamp>
+      <buildNumber>2</buildNumber>
+    </snapshot>
+    <lastUpdated>20170117212649</lastUpdated>
+    <snapshotVersions>
+      <snapshotVersion>
+        <extension>jar</extension>
+        <value>0.9.4-20170117.212649-2</value>
+        <updated>20170117212649</updated>
+      </snapshotVersion>
+      <snapshotVersion>
+        <extension>pom</extension>
+        <value>0.9.4-20170117.212649-2</value>
+        <updated>20170117212649</updated>
+      </snapshotVersion>
+      <snapshotVersion>
+        <classifier>sources</classifier>
+        <extension>jar</extension>
+        <value>0.9.4-20170117.212649-2</value>
+        <updated>20170117212649</updated>
+      </snapshotVersion>
+    </snapshotVersions>
+  </versioning>
+</metadata>
