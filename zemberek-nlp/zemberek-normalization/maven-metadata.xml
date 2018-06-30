@@ -3,11 +3,12 @@
   <groupId>zemberek-nlp</groupId>
   <artifactId>zemberek-normalization</artifactId>
   <versioning>
-    <release>0.13.0</release>
+    <release>0.14.0</release>
     <versions>
       <version>0.12.0</version>
       <version>0.13.0</version>
+      <version>0.14.0</version>
     </versions>
-    <lastUpdated>20180520064941</lastUpdated>
+    <lastUpdated>20180630155454</lastUpdated>
   </versioning>
 </metadata>
